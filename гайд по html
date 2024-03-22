@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гайд по HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        h1 {
+            color: #007bff;
+        }
+        h2 {
+            color: #0056b3;
+        }
+        p {
+            color: #666;
+        }
+        nav ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Гайд по HTML</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#introduction">Введение</a></li>
+            <li><a href="#basics">Основы HTML</a></li>
+            <li><a href="#tags">Основные теги</a></li>
+            <li><a href="#attributes">Атрибуты</a></li>
+            <li><a href="#forms">Формы</a></li>
+            <li><a href="#tables">Таблицы</a></li>
+            <li><a href="#links">Ссылки</a></li>
+            <li><a href="#images">Изображения</a></li>
+            <li><a href="#lists">Списки</a></li>
+            <li><a href="#headings">Заголовки</a></li>
+            <li><a href="#paragraphs">Параграфы</a></li>
+            <li><a href="#comments">Комментарии</a></li>
+        </ul>
+    </nav>
+    <section id="introduction">
+        <h2>Введение</h2>
+        <p>HTML (HyperText Markup Language) - это стандартизированный язык разметки, который используется для создания веб-страниц. С его помощью вы можете структурировать и отображать содержимое вашего веб-сайта.</p>
+    </section>
+    <section id="basics">
+        <h2>Основы HTML</h2>
+        <p>HTML-документ состоит из элементов, которые определяют структуру страницы. Каждый элемент представляет собой тег, обычно включающий открывающий и закрывающий теги. Открывающий тег указывает начало элемента, а закрывающий - его конец.</p>
+        <p>Пример базовой структуры HTML-документа:</p>
+        <pre>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;title&gt;Заголовок страницы&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Заголовок первого уровня&lt;/h1&gt;
+                    &lt;p&gt;Это параграф текста.&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+    </section>
+    <section id="tags">
+        <h2>Основные теги</h2>
+        <p>В HTML существует множество тегов, используемых для разных целей. Некоторые из основных тегов:</p>
+        <ul>
+            <li><strong>&lt;h1&gt;...&lt;h6&gt;</strong>: Заголовки разного уровня</li>
+            <li><strong>&lt;p&gt;</strong>: Параграф текста</li>
+            <li><strong>&lt;a&gt;</strong>: Гиперссылка</li>
+            <li><strong>&lt;img&gt;</strong>: Изображение</li>
+            <li><strong>&lt;ul&gt;</strong> и <strong>&lt;ol&gt;</strong>: Неупорядоченный и упорядоченный списки</li>
+            <li><strong>&lt;li&gt;</strong>: Элемент списка</li>
+            <li><strong>&lt;form&gt;</strong>: Форма</li>
+            <li><strong>&lt;input&gt;</strong>: Поле ввода</li>
+            <li><strong>&lt;button&gt;</strong>: Кнопка</li>
+            <li><strong>&lt;table&gt;</strong>: Таблица</li>
+            <li><strong>&lt;tr&gt;</strong>: Строка таблицы</li>
+            <li><strong>&lt;td&gt;</strong>: Ячейка таблицы</li>
+        </ul>
+    </section>
+    <section id="attributes">
+        <h2>Атрибуты</h2>
+        <p>Атрибуты добавляют дополнительную информацию к элементам. Некоторые распространенные атрибуты:</p>
+        <ul>
+            <li><strong>href</strong>: Адрес ссылки для элемента &lt;a&gt;</li>
+            <li><strong>src</strong>: Адрес изображения для элемента &lt;img&gt;</li>
+            <li><strong>alt</strong>: Альтернативный текст для изображения</li>
+            <li><strong>id</strong>: Уникальный идентификатор элемента</li>
+            <li><strong>class</strong>: Класс элемента для применения стилей</li
+<li><strong>type</strong>: Тип поля ввода (например, text, checkbox, radio)</li>
+            <li><strong>value</strong>: Значение поля ввода</li>
+            <li><strong>rows</strong>: Количество строк в textarea</li>
+            <li><strong>cols</strong>: Количество столбцов в textarea</li>
+            <li><strong>hreflang</strong>: Язык для ссылки</li>
+            <li><strong>target</strong>: Определяет, как загружать ссылку</li>
+            <li><strong>title</strong>: Дополнительная информация о элементе</li>
+        </ul>
+    </section>
+    <section id="forms">
+        <h2>Формы</h2>
+        <p>Элементы формы позволяют пользователям вводить данные и отправлять их на сервер. Некоторые из них:</p>
+        <ul>
+            <li><strong>&lt;form&gt;</strong>: Объявляет форму</li>
+            <li><strong>&lt;input&gt;</strong>: Поле ввода</li>
+            <li><strong>&lt;textarea&gt;</strong>: Многострочное текстовое поле</li>
+            <li><strong>&lt;button&gt;</strong>: Кнопка</li>
+            <li><strong>&lt;select&gt;</strong>: Выпадающий список</li>
+            <li><strong>&lt;label&gt;</strong>: Метка для элемента формы</li>
+        </ul>
+    </section>
+    <section id="tables">
+        <h2>Таблицы</h2>
+        <p>Таблицы используются для отображения данных в виде сетки. Они состоят из строк и столбцов, разделенных ячейками. Основные теги таблиц:</p>
+        <ul>
+            <li><strong>&lt;table&gt;</strong>: Объявляет таблицу</li>
+            <li><strong>&lt;tr&gt;</strong>: Объявляет строку таблицы</li>
+            <li><strong>&lt;td&gt;</strong>: Объявляет ячейку таблицы</li>
+            <li><strong>&lt;th&gt;</strong>: Заголовок ячейки таблицы</li>
+            <li><strong>&lt;thead&gt;</strong>: Заголовок таблицы</li>
+            <li><strong>&lt;tbody&gt;</strong>: Основное содержимое таблицы</li>
+            <li><strong>&lt;tfoot&gt;</strong>: Нижний колонтитул таблицы</li>
+        </ul>
+    </section>
+    <section id="links">
+        <h2>Ссылки</h2>
+        <p>Ссылки используются для перехода на другие страницы. Пример:</p>
+        <pre>
+            <code>
+                &lt;a href="https://www.example.com"&gt;Это ссылка&lt;/a&gt;
+            </code>
+        </pre>
+    </section>
+    <section id="images">
+        <h2>Изображения</h2>
+        <p>Изображения добавляются с помощью тега &lt;img&gt;. Пример:</p>
+        <pre>
+            <code>
+                &lt;img src="image.jpg" alt="Описание изображения"&gt;
+            </code>
+        </pre>
+    </section>
+    <section id="lists">
+        <h2>Списки</h2>
+        <p>HTML поддерживает два типа списков: неупорядоченные и упорядоченные. Пример:</p>
+        <pre>
+            <code>
+                &lt;ul&gt;
+                    &lt;li&gt;Пункт 1&lt;/li&gt;
+                    &lt;li&gt;Пункт 2&lt;/li&gt;
+                &lt;/ul&gt;
+				            &lt;ol&gt;
+                &lt;li&gt;Пункт 1&lt;/li&gt;
+                &lt;li&gt;Пункт 2&lt;/li&gt;
+            &lt;/ol&gt;
+        </code>
+    </pre>
+</section>
+<section id="headings">
+    <h2>Заголовки</h2>
+    <p>В HTML есть шесть уровней заголовков, от &lt;h1&gt; до &lt;h6&gt;. Пример:</p>
+    <pre>
+        <code>
+            &lt;h1&gt;Заголовок первого уровня&lt;/h1&gt;
+            &lt;h2&gt;Заголовок второго уровня&lt;/h2&gt;
+            &lt;h3&gt;Заголовок третьего уровня&lt;/h3&gt;
+            &lt;h4&gt;Заголовок четвёртого уровня&lt;/h4&gt;
+            &lt;h5&gt;Заголовок пятого уровня&lt;/h5&gt;
+            &lt;h6&gt;Заголовок шестого уровня&lt;/h6&gt;
+        </code>
+    </pre>
+</section>
+<section id="paragraphs">
+    <h2>Параграфы</h2>
+    <p>Параграфы создаются с помощью тега &lt;p&gt;. Пример:</p>
+    <pre>
+        <code>
+            &lt;p&gt;Это параграф текста.&lt;/p&gt;
+        </code>
+    </pre>
+</section>
+<section id="comments">
+    <h2>Комментарии</h2>
+    <p>Комментарии в HTML начинаются с &lt;!-- и заканчиваются --&gt;. Они не отображаются на веб-странице. Пример:</p>
+    <pre>
+        <code>
+            &lt;!-- Это комментарий --&gt;
+        </code>
+    </pre>
+</section>
+</body>
+</html>
